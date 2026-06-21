@@ -1,0 +1,132 @@
+.skeleton {
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* Grid layout loading state */
+.gridSkeleton {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 480px) {
+  .gridSkeleton {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .gridSkeleton {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridSkeleton {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.cardSkeleton {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageSkeleton {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 12px 12px 0 0;
+}
+
+.detailsSkeleton {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.textSkeleton {
+  height: 1rem;
+}
+
+.cardTitleSkeleton {
+  width: 75%;
+}
+
+.cardYearSkeleton {
+  width: 30%;
+}
+
+/* Movie Detail loading state */
+.detailSkeleton {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .detailSkeleton {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+.posterSkeleton {
+  aspect-ratio: 2 / 3;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.detailInfoSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.titleSkeleton {
+  height: 2.5rem;
+  width: 60%;
+}
+
+.metaSkeleton {
+  height: 1.25rem;
+  width: 40%;
+}
+
+.overviewTitleSkeleton {
+  height: 1.5rem;
+  width: 25%;
+  margin-top: 1rem;
+}
+
+.overviewTextSkeleton {
+  height: 1rem;
+  width: 100%;
+}
+
+.overviewTextSkeleton:last-child {
+  width: 85%;
+}
