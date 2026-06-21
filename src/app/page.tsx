@@ -1,5 +1,7 @@
 import React, { Suspense } from "react";
 import { getPopularMovies, searchMovies } from "@/services/tmdb";
+
+export const dynamic = "force-dynamic";
 import { SearchBar } from "@/components/SearchBar";
 import { MovieGrid } from "@/components/MovieGrid";
 import { Pagination } from "@/components/Pagination";

@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getMovieDetails } from "@/services/tmdb";
+
+export const dynamic = "force-dynamic";
 import { POSTER_SIZES, BACKDROP_SIZES } from "@/constants";
 import { FavoritesButton } from "@/components/FavoritesButton";
 import { ErrorState } from "@/components/ErrorState";

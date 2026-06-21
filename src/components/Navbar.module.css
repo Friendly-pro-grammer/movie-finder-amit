@@ -84,3 +84,19 @@
   display: inline-block;
   line-height: 1;
 }
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  .navLinks {
+    width: 100%;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  .logo {
+    font-size: 1.25rem;
+  }
+}
