@@ -4,7 +4,7 @@ A production-ready Movie Discovery Application built using **Next.js (App Router
 
 ## Developer Info
 * **Developer Name**: Amit Yadav
-* **Project Assignment**: Built for Jeevan — Amit Yadav
+
 
 ---
 
